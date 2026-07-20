@@ -90,3 +90,75 @@
 - 種別: YouTube 技術動画（ネイティブ速度、学習者向け調整なし）
 - 難易度: 高。ただし内容が既知領域のため意味の予測が効き、音の負荷は下がる
 - 使い方: 字幕を先に出さない。聞く → 詰まる → Show transcript で答え合わせ。30秒単位で回す。
+
+## Flapping / T-voicing
+
+### Flapping (Wikipedia)
+- URL: https://en.wikipedia.org/wiki/Flapping
+- 種別: 百科事典（音声例つき）
+- 信頼度: 中〜高（規則の定義と方言分布の索引として使う）
+- 何が得られるか: flap の発動条件（母音間 + 後続母音が非強勢）、方言分布、例外。レッスン 05 の一次資料。
+
+### Flapping in North American Pronunciation (Journal of Language and Linguistic Studies)
+- URL: http://www.jlls.org/index.php/jlls/article/download/25/27
+- 種別: 査読論文（PDF）
+- 信頼度: 高
+- 何が得られるか: flap の条件と例外を学習者向けに整理。教える順序の根拠。
+
+### Perception of English /r/ and /l/ by Japanese speakers
+- URL: https://en.wikipedia.org/wiki/Perception_of_English_/r/_and_/l/_by_Japanese_speakers
+- 種別: 百科事典（研究への索引）
+- 信頼度: 中〜高
+- 何が得られるか: **日本語のラ行 /ɾ/ を英語母語話者は「英語の flap /t/ の実例」と分類する**という決定的な指摘。flap が日本語話者にとって学習コストゼロである根拠。
+
+### Flapping in American English: A Theoretical Approach (Pándi)
+- URL: http://seas3.elte.hu/odd/odd9/02_PANDI_Julianna.pdf
+- 種別: 学術論文（PDF、ELTE）
+- 信頼度: 中〜高
+- 何が得られるか: flap 規則の理論的定式化と、規則が破れるケースの分析。
+
+## 定型表現 / 談話構造（Formulaic Language）
+
+### Essentials of Linguistics 13.4 — Top-down effects of word knowledge on perception
+- URL: https://ecampusontario.pressbooks.pub/essentialsoflinguistics2/chapter/13-4-evidence-for-top-down-effects-of-word-knowledge-on-perception/
+- 種別: 教科書（オープンアクセス、eCampusOntario）
+- 信頼度: 高
+- 何が得られるか: 音韻修復（phoneme restoration）と Ganong 効果。**語彙知識が欠けた音を補完する**という、レッスン 06 の中核。
+
+### Pseudo-cleft-like structures in conversation (Journal of Pragmatics)
+- URL: https://www.sciencedirect.com/science/article/pii/S0024384122001619
+- 種別: 査読論文
+- 信頼度: 高
+- 何が得られるか: 話し言葉の pseudo-cleft は **do 66% / happen 13% / say 8% の3語で87%**。前半が定型断片として機能するという実証。
+
+### Formulaic Sequences Used by Native English Speaking Teachers
+- URL: https://files.eric.ed.gov/fulltext/EJ1134682.pdf
+- 種別: 査読論文（PDF、ERIC）
+- 信頼度: 中〜高
+- 何が得られるか: **話し言葉は 68.81% が定型表現**（学術散文は21%）。「解読せず認識する」方針の量的根拠。
+
+### Cleft sentence (Wikipedia)
+- URL: https://en.wikipedia.org/wiki/Cleft_sentence
+- 種別: 百科事典
+- 信頼度: 中
+- 何が得られるか: cleft / pseudo-cleft の定義と、pseudo-cleft が話し言葉に偏るという分布。
+
+## 産出 / スピーキング（Production）
+
+### A Systematic Review of Research on the use of Shadowing for L2 Pronunciation Teaching (2025)
+- URL: https://www.tandfonline.com/doi/full/10.1080/29984475.2025.2546827
+- 種別: 査読論文（systematic review、44件）
+- 信頼度: 高
+- 何が得られるか: shadowing が理解可能性・流暢性に加え、**リズム・イントネーション・弱形の産出**という韻律制御を伸ばすという証拠。レッスン 07 の一次資料。
+
+### Utilizing shadowing practice and ASR technology to enhance EFL pronunciation and fluency
+- URL: https://link.springer.com/article/10.1007/s40692-025-00374-x
+- 種別: 査読論文（Journal of Computers in Education）
+- 信頼度: 中〜高
+- 何が得られるか: 音声認識を判定に使った shadowing 練習の先行研究。`assets/speaking.js` の設計根拠。
+
+### Effects of the Shadowing Technique on English Listening (ERIC)
+- URL: https://files.eric.ed.gov/fulltext/EJ1479870.pdf
+- 種別: 査読論文（PDF）
+- 信頼度: 中
+- 何が得られるか: shadowing のリスニングへの転移。産出→知覚の因果の裏づけ。

@@ -283,6 +283,73 @@ footer {
 
 @media print {
   body { max-width: none; padding: 0; font-size: 11pt; background: #fff; color: #000; }
-  .play-btn, .quiz { break-inside: avoid; }
+  .play-btn, .quiz, .speaking { break-inside: avoid; }
+  .speaking-actions { display: none; }
   a { color: #000; }
 }
+
+/* --- スピーキング --- */
+
+.speaking {
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--accent);
+  border-radius: 4px;
+  padding: 1.3rem;
+  margin: 1.6rem 0;
+}
+
+.speaking-target {
+  font-family: var(--mono);
+  font-size: 1.05rem;
+  margin: 0 0 1rem;
+  line-height: 1.5;
+}
+
+.speaking-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.speaking-actions .play-btn { margin-bottom: 0; }
+
+.speaking-rec {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--accent);
+  border-radius: 3px;
+  background: var(--accent);
+  color: var(--paper);
+  cursor: pointer;
+}
+
+.speaking-rec:hover { opacity: 0.85; }
+
+.speaking-feedback {
+  margin: 0.9rem 0 0;
+  font-size: 0.92rem;
+  display: none;
+}
+
+.speaking-feedback.shown { display: block; }
+.speaking-feedback.correct { color: var(--ok); }
+.speaking-feedback.wrong { color: var(--ng); }
+.speaking-feedback.listening { color: var(--ink-soft); font-style: italic; }
+.speaking-note { display: none; }
+
+/* --- 強勢の可視化 --- */
+
+.beat {
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.flat {
+  color: var(--ink-soft);
+  opacity: 0.7;
+}
+
+/* --- 印刷 --- */
