@@ -8,6 +8,12 @@
  *     <p class="dictation-note">正解後に出す解説（HTML 可）</p>
  *   </div>
  *
+ * data-say を添えると、読み上げる文と正解を分けられる。段階ディクテーション
+ * （同じ音声に対して「内容語だけ」→「全文」と2段階で答えさせる）に使う。
+ *
+ *   <div class="dictation" data-say="A couple of tools are available."
+ *                          data-answer="tools available">
+ *
  * 再生ボタン・入力欄・判定ボタンは JS が生成する。
  * 判定は大文字小文字・句読点・連続空白・短縮形のアポストロフィを無視する。
  */
@@ -22,6 +28,7 @@ const normalize = (text) =>
 
 document.querySelectorAll('.dictation').forEach((item) => {
   const answer = item.dataset.answer;
+  const spoken = item.dataset.say || answer;
   const rate = Number(item.dataset.rate || 0.9);
   const hint = item.querySelector('.dictation-hint');
   const note = item.querySelector('.dictation-note');
@@ -47,7 +54,7 @@ document.querySelectorAll('.dictation').forEach((item) => {
   const speak = (speed) => {
     if (!('speechSynthesis' in window)) return;
     speechSynthesis.cancel();
-    const utterance = new SpeechSynthesisUtterance(answer);
+    const utterance = new SpeechSynthesisUtterance(spoken);
     utterance.lang = 'en-US';
     utterance.rate = speed;
     speechSynthesis.speak(utterance);

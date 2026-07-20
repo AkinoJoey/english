@@ -48,3 +48,45 @@
 - 種別: 査読論文（PDF）
 - 信頼度: 中〜高
 - 何が得られるか: 弱形への不慣れが L2 のリスニング理解を妨げる主要因であるという裏付け。
+
+## 子音 / Dark L
+
+### Dark L — University of Manitoba, Department of Linguistics
+- URL: https://home.cc.umanitoba.ca/~krussll/phonetics/narrower/dark-l.html
+- 種別: 大学の音声学教材
+- 信頼度: 高
+- 何が得られるか: dark L [ɫ] の調音の最短解説。レッスン 03 の一次資料。
+
+### Voiced dental and alveolar lateral approximants (Wikipedia)
+- URL: https://en.wikipedia.org/wiki/Voiced_dental_and_alveolar_lateral_approximants
+- 種別: 百科事典
+- 信頼度: 中（一次資料への索引として使う）
+- 何が得られるか: light [l] / dark [ɫ] の異音分布の定義。
+
+### Onset-coda asymmetry in L2 syllable perception by Japanese teachers of English
+- URL: https://www.academia.edu/107459590/Onset_coda_asymmetry_in_second_language_syllable_perception_by_Japanese_teachers_of_English
+- 種別: 査読論文
+- 信頼度: 中〜高
+- 何が得られるか: 日本語話者が英語の音節数計数で成績を落とすという実証。カタカナ拍による過剰計数の裏付け。
+
+## 分節 / Segmentation
+
+### Cutler & Norris (1988), The role of strong syllables in segmentation for lexical access
+- URL: https://www.semanticscholar.org/paper/The-role-of-strong-syllables-in-segmentation-for-Cutler-Norris/ab59fdacbd55e9be570493afa8560065742e7258
+- 種別: 査読論文（原典）
+- 信頼度: 高
+- 何が得られるか: Metrical Segmentation Strategy の原典。英語話者が強い音節を語頭の目印として分節するという知見。
+
+### Encyclopedia of Language Development — Metrical Segmentation
+- URL: https://sk.sagepub.com/ency/edvol/encyclopedia-of-language-development/chpt/metrical-segmentation
+- 種別: 事典項目
+- 信頼度: 高
+- 何が得られるか: MSS の平易な要約。**強勢基準言語には有効だが、モーラ基準の日本語には当てはまらない**という決定的な指摘。
+
+## 実音源（多聴用）
+
+### mattpocock — skills: A complete AI Coding workflow
+- URL: https://www.youtube.com/watch?v=M6mYodf0dJM
+- 種別: YouTube 技術動画（ネイティブ速度、学習者向け調整なし）
+- 難易度: 高。ただし内容が既知領域のため意味の予測が効き、音の負荷は下がる
+- 使い方: 字幕を先に出さない。聞く → 詰まる → Show transcript で答え合わせ。30秒単位で回す。

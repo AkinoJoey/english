@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>リファレンス: Segmentation（音の流れを語に切る）</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<p class="eyebrow">Reference</p>
+<h1>Segmentation</h1>
+<p class="subtitle">音は聞こえている。問題は、どこで切るか。</p>
+
+<div class="callout">
+<p><strong>大原則:</strong> 英語話者は<strong>強い音節を新しい語の先頭とみなして</strong>音の流れを切る（Metrical Segmentation Strategy, Cutler &amp; Norris 1988）。英語の語の<strong>約90%が語頭強勢</strong>なので、この方略が機能する。<a href="https://www.semanticscholar.org/paper/The-role-of-strong-syllables-in-segmentation-for-Cutler-Norris/ab59fdacbd55e9be570493afa8560065742e7258">出典: The role of strong syllables in segmentation for lexical access</a></p>
+</div>
+
+<h2>なぜ日本語話者に効かないのか</h2>
+
+<p>この方略は<strong>強勢基準の言語</strong>（英語・ドイツ語・オランダ語）で有効で、<strong>モーラ基準の日本語</strong>には当てはまらない（<a href="https://sk.sagepub.com/ency/edvol/encyclopedia-of-language-development/chpt/metrical-segmentation">Encyclopedia of Language Development: Metrical Segmentation</a>）。</p>
+
+<div class="table-scroll">
+<table>
+<thead><tr><th></th><th>日本語（母語）</th><th>英語（目標）</th></tr></thead>
+<tbody>
+<tr><td><strong>単位</strong></td><td>モーラ（拍）</td><td>強勢音節</td></tr>
+<tr><td><strong>切り方</strong></td><td>等間隔の拍で刻む</td><td>強い音節を語頭の目印にする</td></tr>
+<tr><td><strong>手がかり</strong></td><td>すべての拍が等価</td><td>強い音節だけが目印</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>つまり日本語話者は、<strong>持っていない方略を新しく獲得する</strong>必要がある。耳の良し悪しの問題ではない。</p>
+
+<h2>切り方の手順</h2>
+
+<div class="table-scroll">
+<table>
+<thead><tr><th>手順</th><th>やること</th></tr></thead>
+<tbody>
+<tr><td>1</td><td><strong>強い音節だけ</strong>を拾う。弱い部分は無視してよい</td></tr>
+<tr><td>2</td><td>強い音節の<strong>直前に切れ目</strong>を入れる（そこが語頭）</td></tr>
+<tr><td>3</td><td>拾った強い音節から<strong>内容語</strong>を復元する</td></tr>
+<tr><td>4</td><td>内容語の間に入る<strong>機能語を文法から推測</strong>する</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout">
+<p><strong>4番が重要。</strong> 機能語は聞き取るものではなく、<strong>推測するもの</strong>。潰れて鳴っていない以上、耳で捕まえようとしても無理がある。内容語さえ拾えれば、<span class="phrase">the / a / of / are</span> は文法が決めてくれる。</p>
+</div>
+
+<h2>実例 — 強勢だけで復元する</h2>
+
+<div class="table-scroll">
+<table>
+<thead><tr><th>実際の文</th><th>拾える強い音節</th><th>復元</th></tr></thead>
+<tbody>
+<tr>
+  <td class="phrase">A couple of tools are available.</td>
+  <td class="phrase link-mark">COU… TOOLS… VAIL…</td>
+  <td>couple / tools / available</td>
+</tr>
+<tr>
+  <td class="phrase">Pull the model file from the shell.</td>
+  <td class="phrase link-mark">PULL… MO… FILE… SHELL</td>
+  <td>pull / model / file / shell</td>
+</tr>
+<tr>
+  <td class="phrase">Install the following packages.</td>
+  <td class="phrase link-mark">STALL… FOL… PACK…</td>
+  <td>install / following / packages</td>
+</tr>
+<tr>
+  <td class="phrase">Let's install it on a local terminal.</td>
+  <td class="phrase link-mark">STALL… LO… TER…</td>
+  <td>install / local / terminal</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<h2>語頭強勢でない例外</h2>
+
+<p>約10%は語頭強勢ではない。多くは<strong>接頭辞つきの動詞</strong>。</p>
+
+<div class="table-scroll">
+<table>
+<thead><tr><th>語</th><th>強勢</th><th>語</th><th>強勢</th></tr></thead>
+<tbody>
+<tr><td class="phrase">install</td><td>in·<strong>STALL</strong></td><td class="phrase">deploy</td><td>de·<strong>PLOY</strong></td></tr>
+<tr><td class="phrase">return</td><td>re·<strong>TURN</strong></td><td class="phrase">assign</td><td>as·<strong>SIGN</strong></td></tr>
+<tr><td class="phrase">connect</td><td>con·<strong>NECT</strong></td><td class="phrase">resolve</td><td>re·<strong>SOLVE</strong></td></tr>
+<tr><td class="phrase">between</td><td>be·<strong>TWEEN</strong></td><td class="phrase">before</td><td>be·<strong>FORE</strong></td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>名詞と動詞で強勢が動く語</h2>
+
+<p>綴りが同じでも、品詞で強勢位置が変わる。<strong>強勢を聞けば品詞が分かる</strong>。</p>
+
+<div class="table-scroll">
+<table>
+<thead><tr><th>語</th><th>名詞</th><th>動詞</th></tr></thead>
+<tbody>
+<tr><td class="phrase">record</td><td><strong>RE</strong>·cord</td><td>re·<strong>CORD</strong></td></tr>
+<tr><td class="phrase">object</td><td><strong>OB</strong>·ject</td><td>ob·<strong>JECT</strong></td></tr>
+<tr><td class="phrase">present</td><td><strong>PRE</strong>·sent</td><td>pre·<strong>SENT</strong></td></tr>
+<tr><td class="phrase">process</td><td><strong>PRO</strong>·cess</td><td>pro·<strong>CESS</strong></td></tr>
+<tr><td class="phrase">update</td><td><strong>UP</strong>·date</td><td>up·<strong>DATE</strong></td></tr>
+<tr><td class="phrase">increase</td><td><strong>IN</strong>·crease</td><td>in·<strong>CREASE</strong></td></tr>
+</tbody>
+</table>
+</div>
+
+<footer>
+<div class="nav-links">
+  <a href="./connected-speech.html">Connected Speech</a>
+  <a href="./weak-forms.html">Weak Forms</a>
+  <a href="./dark-l.html">Dark L</a>
+  <a href="../lessons/0004-segmentation.html">→ レッスン 04: 音を語に切る</a>
+</div>
+<p>不明点があれば、いつでもエージェント（先生）に質問してください。</p>
+</footer>
+
+</body>
+</html>
