@@ -162,3 +162,43 @@
 - 種別: 査読論文（PDF）
 - 信頼度: 中
 - 何が得られるか: shadowing のリスニングへの転移。産出→知覚の因果の裏づけ。
+
+## 自動性 / 多聴（Automaticity & Volume）
+
+### Testing the role of processing speed and automaticity in second language listening
+- URL: https://www.cambridge.org/core/journals/applied-psycholinguistics/article/abs/testing-the-role-of-processing-speed-and-automaticity-in-second-language-listening/E9E7E1F5516B0C6AB2AE1FEAD6E8293D
+- 種別: 査読論文（Hui & Godfroid, Applied Psycholinguistics 42(5), 2021）
+- 信頼度: 高
+- 何が得られるか: L2 聴解では**語彙レベルの処理の速さと安定性**が命題理解を経由して全体を左右する。**変動係数（CV）で「速さ」と「自動性」を区別**した点が重要。レッスン 08 の理論的支柱。
+- 注意: 本文は有料。要旨のみ確認済み。
+
+### Narrow Listening as a Method to Improve EFL Learners' Listening Comprehension (PASAA, 2022)
+- URL: https://eric.ed.gov/?id=EJ1376344
+- 種別: 査読論文（無料 / ERIC）
+- 信頼度: 高
+- 何が得られるか: narrow listening 群は**練習していない話題の聴解でも**有意に伸びた。素材を絞ることが汎化を妨げないという反直感的な証拠。レッスン 08 の一次資料。
+
+### Narrow Listening: an alternative way to develop listening comprehension (System 27(3))
+- URL: https://www.sciencedirect.com/science/article/abs/pii/S0346251X99000305
+- 種別: 査読論文（Dupuy, 1999）
+- 信頼度: 高
+- 何が得られるか: Krashen の narrow listening を仏語学習者で実施した報告。理解度・流暢性・自信の向上。
+
+### Narrow reading and narrow listening (The Language Gym)
+- URL: https://gianfrancoconti.com/2015/06/21/narrow-reading-and-narrow-listening-enhancing-receptive-skills-through-focused-and-purposeful-recycling/
+- 種別: 実務家ブログ（Conti）
+- 信頼度: 中
+- 何が得られるか: **素材選定の実務**。「同じ語彙が回りつつ文面は違う」ことが要点で、4〜5本・各30〜40秒という具体的な目安。
+
+### Shadowing for Fluency, Prosody, and Listening Comprehension (The Language Gym)
+- URL: https://gianfrancoconti.com/2025/07/26/shadowing-for-fluency-prosody-and-listening-comprehension-the-what-why-and-how-according-to-sla-research/
+- 種別: 実務家によるSLA研究レビュー（Conti, 2025）
+- 信頼度: 中
+- 何が得られるか: shadowing の**限界**側。「理解を伴わない反復（mindless parroting）」のリスクと、音韻の下地なしに導入すると誤形が自動化されるという警告。
+- 注意: **反復 shadowing が新規素材の聴解へ転移するかを示す実証は、この記事にも他でも見つけられなかった。**「不明」として扱うこと。
+
+### Average Speaking Rate and Words per Minute
+- URL: https://virtualspeech.com/blog/average-speaking-rate-words-per-minute
+- 種別: 二次資料（National Center for Voice and Speech の数値を引用）
+- 信頼度: 中
+- 何が得られるか: 英語の会話速度 **約150 wpm**（＝1語あたり300〜400ms）。「規則を意識的に適用する時間はない」という主張の量的根拠。

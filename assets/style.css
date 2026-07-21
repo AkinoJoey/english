@@ -207,6 +207,18 @@ figure.aside {
 
 .play-btn:hover { background: var(--accent-soft); }
 
+/* 初見モード（data-cold）の再生カウンタ。何回で取れたかが自動性の指標になる。 */
+.play-count {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  margin-left: 0.7rem;
+}
+
+/* 誤り分類表。既習レッスンへの索引として、リファレンスと各レッスンで共用する。 */
+.taxonomy td:first-child { white-space: nowrap; font-weight: 600; }
+.taxonomy .sign { font-family: var(--mono); font-size: 0.9rem; }
+
 /* --- ディクテーション --- */
 
 .dictation {

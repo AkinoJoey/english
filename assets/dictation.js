@@ -14,6 +14,12 @@
  *   <div class="dictation" data-say="A couple of tools are available."
  *                          data-answer="tools available">
  *
+ * data-cold を添えると「初見モード」になる。ゆっくり再生を封じ、再生回数を数えて
+ * 表示する。実世界の聴取（巻き戻しが効かない）に条件を近づけるためのもので、
+ * 何回で取れたかが自動性の指標になる。
+ *
+ *   <div class="dictation" data-cold data-answer="...">
+ *
  * 再生ボタン・入力欄・判定ボタンは JS が生成する。
  * 判定は大文字小文字・句読点・連続空白・短縮形のアポストロフィを無視する。
  */
@@ -32,13 +38,17 @@ document.querySelectorAll('.dictation').forEach((item) => {
   const rate = Number(item.dataset.rate || 0.9);
   const hint = item.querySelector('.dictation-hint');
   const note = item.querySelector('.dictation-note');
+  const cold = item.hasAttribute('data-cold');
   let attempts = 0;
+  let plays = 0;
 
   const controls = document.createElement('div');
   controls.className = 'dictation-controls';
   controls.innerHTML = `
     <button class="play-btn" type="button">▶ 聞く</button>
-    <button class="play-btn play-btn--slow" type="button">▶ ゆっくり</button>
+    ${cold
+      ? '<span class="play-count">再生 0 回</span>'
+      : '<button class="play-btn play-btn--slow" type="button">▶ ゆっくり</button>'}
     <input class="dictation-input" type="text" autocomplete="off" autocapitalize="off"
            spellcheck="false" placeholder="聞こえた文を入力">
     <div class="dictation-actions">
@@ -60,8 +70,14 @@ document.querySelectorAll('.dictation').forEach((item) => {
     speechSynthesis.speak(utterance);
   };
 
-  controls.querySelectorAll('.play-btn')[0].addEventListener('click', () => speak(rate));
-  controls.querySelectorAll('.play-btn')[1].addEventListener('click', () => speak(0.55));
+  const counter = controls.querySelector('.play-count');
+  controls.querySelectorAll('.play-btn')[0].addEventListener('click', () => {
+    plays += 1;
+    if (counter) counter.textContent = `再生 ${plays} 回`;
+    speak(rate);
+  });
+  const slowButton = controls.querySelector('.play-btn--slow');
+  if (slowButton) slowButton.addEventListener('click', () => speak(0.55));
 
   const settle = (message, state) => {
     feedback.innerHTML = message;
@@ -85,7 +101,8 @@ document.querySelectorAll('.dictation').forEach((item) => {
     if (normalize(input.value) === normalize(answer)) {
       input.disabled = true;
       settle(
-        '<strong>正解。</strong> ' + (note ? note.innerHTML : ''),
+        `<strong>正解。</strong>${cold ? `（再生 ${plays} 回）` : ''} ` +
+          (note ? note.innerHTML : ''),
         'correct'
       );
       if (note) note.remove();
