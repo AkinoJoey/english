@@ -65,14 +65,8 @@
     const feedback = controls.querySelector('.speaking-feedback');
     const recBtn = controls.querySelector('.speaking-rec');
 
-    const say = (rate) => {
-      if (!('speechSynthesis' in window)) return;
-      speechSynthesis.cancel();
-      const u = new SpeechSynthesisUtterance(target);
-      u.lang = 'en-US';
-      u.rate = rate;
-      speechSynthesis.speak(u);
-    };
+    /* 音声出力は assets/voice.js に集約している */
+    const say = (rate) => window.LessonVoice && window.LessonVoice.speak(target, rate);
     controls.querySelector('.speaking-model').addEventListener('click', () => say(1));
     controls.querySelector('.speaking-model-slow').addEventListener('click', () => say(0.6));
 

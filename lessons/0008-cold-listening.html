@@ -87,6 +87,13 @@
 
 <p>下は<strong>ゆっくり再生がありません</strong>。再生回数が表示されます。既習の規則がばらばらに混ざっているので、<strong>どれが来るか予告しません</strong>。実際の聴取と同じ条件です。</p>
 
+<div class="callout">
+<p><strong>先に声を選んでください。</strong> 読み上げが「ロボットみたいで不自然」との報告を受けて、声を差し替えられるようにしました。<strong>これは見た目の問題ではありません</strong> —— 機械的な声は<strong>丁寧に読み上げる</strong>ため、flap や弱形といった、まさにこの教材が扱っている現象を作らないことがあります。<br>
+下のリストから<strong>いくつか試して、一番人間らしいものを選んでください</strong>。<span class="phrase">Google</span> や <span class="phrase">Siri</span> を含む名前、「ネットワーク」表示のものが自然な傾向です。選択は保存され、全レッスンに反映されます。</p>
+</div>
+
+<div class="voice-picker"></div>
+
 <p><strong>まず1回だけ押して、書けるだけ書いてください。</strong></p>
 
 <div class="dictation" data-cold data-answer="We should be able to cache a lot of it." data-rate="1.0">
@@ -131,11 +138,36 @@
 
 <p><strong>実地練習 —— 素材を「揃える」ことから始めます。</strong></p>
 
+<h3>手順0: 話者を1人に固定する</h3>
+
+<p>narrow listening の要は<strong>「今後しばらく、この人だけを聴く」と決めること</strong>です。毎回違う人を聴くと、声・訛り・速さ・口癖が毎回リセットされ、そのぶんの負荷が音の処理を圧迫します。逆に1人に固定すると、数本目から<strong>その人の癖が予測できるようになり、余った処理能力が音に回ります</strong>。</p>
+
+<div class="callout">
+<p><strong>推奨: <a href="https://www.youtube.com/@mattpocockuk">Matt Pocock</a> をそのまま続けてください。</strong> あなたがレッスン 07 で使った動画の話者です。<strong>すでに数十回聴いて声に慣れている</strong> —— これは narrow listening の観点では、ゼロから始めるより明確に有利です。イギリス英語で、TypeScript という領域も一定しています。</p>
+</div>
+
+<p>変えたい場合の候補（いずれも transcript あり）:</p>
+
+<div class="table-scroll">
+<table>
+<thead><tr><th>話者</th><th>訛り</th><th>特徴</th></tr></thead>
+<tbody>
+<tr><td><a href="https://www.youtube.com/@mattpocockuk">Matt Pocock</a></td><td>英</td><td>説明が構造化されていて、速度は中程度。<strong>継続なら第一候補</strong></td></tr>
+<tr><td><a href="https://www.youtube.com/@t3dotgg">Theo (t3.gg)</a></td><td>米</td><td>ライブ配信中心で<strong>自然な話し言葉</strong>。速く、フィラーも多い。難度は高い</td></tr>
+<tr><td><a href="https://www.youtube.com/@WebDevSimplified">Web Dev Simplified</a></td><td>米</td><td>明瞭でゆっくりめ。<strong>最も易しい</strong>。厳しすぎると感じたらここへ</td></tr>
+</tbody>
+</table>
+</div>
+
+<p><strong>「聞き取りやすいか」より「今後も聴きたいか」で選んでください。</strong> 数十時間つき合う相手です。</p>
+
+<h3>手順1〜4</h3>
+
 <ol>
-<li><strong>話者を1人決める。</strong> 聞き取りやすさより、<strong>今後も聞き続けたいか</strong>で選んでください</li>
-<li>その人の動画を<strong>4〜5本</strong>、transcript が取れるものでキューに入れる</li>
+<li>その人の動画を<strong>4〜5本</strong>、transcript が取れるものでキューに入れる（YouTube なら概要欄下の「文字起こしを表示」）</li>
 <li><strong>各本から15〜20秒を1区間ずつ</strong>選び、上の一回聴きプロトコル（1〜6）を回す</li>
 <li>誤りを<a href="../reference/error-taxonomy.html">分類表</a>で振り分ける</li>
+<li>1本を極めないこと。<strong>浅く、5本に散らす</strong></li>
 </ol>
 
 <div class="callout">
@@ -146,9 +178,23 @@
 </ol>
 </div>
 
-<h2>7. 補足: 判定部品について</h2>
+<h2>7. 合成音声の限界について</h2>
 
-<p>レッスン 07 の音声判定が<strong>「動いたが認識が変」</strong>とのことでした。直したいので、次に話すとき<strong>どう変だったか</strong>を教えてください —— 別の語に化けた／途中で切れた／時間がおかしい、など一言で構いません。<strong>今日の練習は判定部品を使っていない</strong>ので、直るまで進行は止まりません。</p>
+<p>声を差し替えても、<strong>合成音声には原理的な限界があります</strong>。読み上げエンジンは基本的に「明瞭に読む」ことを目的に作られており、人間の話者がやる<strong>崩し</strong> —— <span class="phrase">go to</span> を [ɡoʊɾə] にする、<span class="phrase">should be able to</span> を全部 [ə] にする —— を、いつも再現するとは限りません。</p>
+
+<div class="callout">
+<p><strong>したがって、このワークショップの練習には役割分担があります。</strong></p>
+<div class="table-scroll">
+<table>
+<thead><tr><th></th><th>役割</th></tr></thead>
+<tbody>
+<tr><td>レッスン内の音声</td><td><strong>規則の確認</strong>。何が起きるはずかを、短い文で明示的に見る</td></tr>
+<tr><td class="link-mark">実音源（narrow listening）</td><td class="link-mark"><strong>訓練の本体。</strong> 本物の崩しは、本物の話者からしか来ない</td></tr>
+</tbody>
+</table>
+</div>
+<p>週9〜11時間のうち、<strong>レッスンは短く、大半を実音源に</strong>という<a href="../MISSION.md">ミッション</a>の配分は、この意味でも正しい方針です。上の練習で違和感があったら、<strong>合成音声側を疑ってください</strong> —— そして、それを報告してください。</p>
+</div>
 
 <footer>
 <div class="nav-links">
@@ -158,8 +204,9 @@
   <a href="../reference/dark-l.html">Dark L</a>
   <a href="./0007-speaking-the-frame.html">← レッスン 07</a>
 </div>
-<p><strong>分からないことがあれば、遠慮なく聞いてください。</strong> 特に「話者を誰にするか」は今週の成否を左右します。候補があれば一緒に選びます。<strong>コミュニティについては「いずれ興味あり」と伺いました。急かしませんが、こちらから頃合いを見て提案します。</strong></p>
+<p><strong>分からないことがあれば、遠慮なく聞いてください。</strong> 特に、<strong>声を変えても不自然なままだったら教えてください</strong> —— 選べる声が環境になければ、練習の設計自体を変えます。<strong>コミュニティについては「いずれ興味あり」と伺いました。急かしませんが、こちらから頃合いを見て提案します。</strong></p>
 </footer>
+<script src="../assets/voice.js"></script>
 
 <script src="../assets/quiz.js"></script>
 <script src="../assets/dictation.js"></script>

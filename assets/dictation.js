@@ -61,14 +61,8 @@ document.querySelectorAll('.dictation').forEach((item) => {
 
   const input = controls.querySelector('.dictation-input');
   const feedback = controls.querySelector('.dictation-feedback');
-  const speak = (speed) => {
-    if (!('speechSynthesis' in window)) return;
-    speechSynthesis.cancel();
-    const utterance = new SpeechSynthesisUtterance(spoken);
-    utterance.lang = 'en-US';
-    utterance.rate = speed;
-    speechSynthesis.speak(utterance);
-  };
+  /* 音声出力は assets/voice.js に集約している（声の選択を全レッスンで共有するため） */
+  const speak = (speed) => window.LessonVoice && window.LessonVoice.speak(spoken, speed);
 
   const counter = controls.querySelector('.play-count');
   controls.querySelectorAll('.play-btn')[0].addEventListener('click', () => {

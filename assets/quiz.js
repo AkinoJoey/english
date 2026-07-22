@@ -49,11 +49,9 @@ document.querySelectorAll('.play-btn[data-say]').forEach((button) => {
     button.textContent = '（このブラウザは音声再生に非対応）';
     return;
   }
-  button.addEventListener('click', () => {
-    speechSynthesis.cancel();
-    const utterance = new SpeechSynthesisUtterance(button.dataset.say);
-    utterance.lang = 'en-US';
-    utterance.rate = Number(button.dataset.rate || 1);
-    speechSynthesis.speak(utterance);
-  });
+  /* 音声出力は assets/voice.js に集約している */
+  button.addEventListener('click', () =>
+    window.LessonVoice &&
+    window.LessonVoice.speak(button.dataset.say, Number(button.dataset.rate || 1))
+  );
 });

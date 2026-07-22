@@ -215,6 +215,41 @@ figure.aside {
   margin-left: 0.7rem;
 }
 
+/* 読み上げ音声の選択 UI（assets/voice.js）。声の質が教材の正しさに直結する。 */
+.voice-picker {
+  border: 1px dashed var(--rule);
+  border-radius: 4px;
+  padding: 0.9rem 1.1rem;
+  margin: 1.6rem 0;
+}
+
+.voice-label {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  margin-right: 0.6rem;
+}
+
+.voice-select {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  padding: 0.4rem 0.5rem;
+  max-width: 100%;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.voice-select + .voice-test { margin-left: 0.6rem; }
+
+.voice-note {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  margin: 0.7rem 0 0;
+}
+
 /* 誤り分類表。既習レッスンへの索引として、リファレンスと各レッスンで共用する。 */
 .taxonomy td:first-child { white-space: nowrap; font-weight: 600; }
 .taxonomy .sign { font-family: var(--mono); font-size: 0.9rem; }
@@ -296,7 +331,7 @@ footer {
 @media print {
   body { max-width: none; padding: 0; font-size: 11pt; background: #fff; color: #000; }
   .play-btn, .quiz, .speaking { break-inside: avoid; }
-  .speaking-actions { display: none; }
+  .speaking-actions, .voice-picker { display: none; }
   a { color: #000; }
 }
 
