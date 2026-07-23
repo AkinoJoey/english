@@ -328,10 +328,76 @@ footer {
 
 .nav-links { display: flex; flex-wrap: wrap; gap: 1.2rem; margin-bottom: 1.2rem; }
 
+/* --- 意味の積み上げ（assets/chunk-build.js）--- */
+
+.chunk-build {
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--accent);
+  border-radius: 4px;
+  padding: 1.3rem;
+  margin: 1.6rem 0;
+}
+
+.chunk-stack { display: flex; flex-direction: column; gap: 0.8rem; }
+.chunk-stack:empty { display: none; }
+
+.chunk-row {
+  padding: 0.7rem 0.9rem;
+  background: var(--accent-soft);
+  border-radius: 4px;
+}
+
+.chunk-line { display: flex; align-items: baseline; gap: 0.6rem; }
+
+.chunk-replay {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  border: 1px solid var(--accent);
+  border-radius: 3px;
+  background: transparent;
+  color: var(--accent);
+  cursor: pointer;
+  padding: 0.1rem 0.4rem;
+  flex: none;
+}
+.chunk-replay:hover { background: var(--paper); }
+
+.chunk-text { font-size: 1.05rem; }
+
+.chunk-gist-btn {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  border: 1px dashed var(--rule);
+  border-radius: 3px;
+  background: transparent;
+  color: var(--ink-soft);
+  cursor: pointer;
+  padding: 0.25rem 0.6rem;
+  margin-top: 0.5rem;
+}
+.chunk-gist-btn:hover { border-style: solid; }
+
+.chunk-gist {
+  display: none;
+  margin: 0.5rem 0 0;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  border-top: 1px solid var(--rule);
+  padding-top: 0.5rem;
+}
+.chunk-gist.shown { display: block; }
+
+.chunk-controls { display: flex; align-items: center; gap: 0.7rem; margin-top: 1rem; }
+.chunk-controls .play-btn { margin-bottom: 0; }
+.chunk-count { font-family: var(--mono); font-size: 0.8rem; color: var(--ink-soft); }
+.play-btn.chunk-full { border-style: dashed; }
+
 @media print {
   body { max-width: none; padding: 0; font-size: 11pt; background: #fff; color: #000; }
-  .play-btn, .quiz, .speaking { break-inside: avoid; }
-  .speaking-actions, .voice-picker { display: none; }
+  .play-btn, .quiz, .speaking, .chunk-build { break-inside: avoid; }
+  .speaking-actions, .voice-picker, .chunk-controls, .chunk-replay, .chunk-gist-btn { display: none; }
+  .chunk-gist { display: block; }
   a { color: #000; }
 }
 
